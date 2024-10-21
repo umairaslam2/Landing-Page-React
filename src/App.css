@@ -1,0 +1,66 @@
+/* src/App.css */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* the header stays at the top */
+.header {
+  width: 100%;
+}
+
+/* Main container with sidebar and content */
+.main-container {
+  display: flex;
+  flex: 1;
+}
+
+/* Sidebar takes fixed width on the left */
+.sidebar {
+  width: 250px;
+  background-color: white;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  height: calc(100vh - 70px); /* sidebar height based on header */
+}
+
+/* Card section  */
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  column-gap: 10px;  /* Horizontal gap between the cards */
+  row-gap: 5px;  /* Reduced vertical gap between rows */
+  padding: 0px 20px 20px 20px;  /* Remove top padding, but keep sides */
+  flex-grow: 1;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* for dark mode styling */
+body.dark {
+  background-color: #2c2c2c; /* Dark background */
+  color: white; /* Light text color */
+}
+
+.app.dark .header {
+  background-color: #3c3c3c; /* Dark header */
+  border-bottom: 1px solid #555; /* Darker border */
+}
+
+/*  sidebar and other components  */
+.sidebar.dark {
+  background-color: #3c3c3c; /* Dark sidebar */
+  color: white; /* Light text color in sidebar */
+}
+
+
+
+
+
+
+
+
+
+

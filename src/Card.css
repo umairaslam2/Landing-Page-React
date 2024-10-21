@@ -1,0 +1,48 @@
+.card {
+  padding: 10px;
+  background-color: #f1f1f1; /* Light background */
+  border-radius: 20px;
+  width: 95%; /* Increase the card width */
+  text-align: left; /* Align text to the left */
+  transition: background-color 0.3s ease;
+  margin: 20px; /*  no margin around the card */
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex; /* flexbox for layout */
+  align-items: center; /* Center items vertically */
+  border-bottom: 4px solid transparent; /* Bottom border for hover effect */
+}
+
+.card-content {
+  display: flex; /* Use flex for card content */
+  align-items: center; /* Center items vertically */
+  width: 100%; /*  full width */
+}
+
+.icon {
+  font-size: 36px; /* Increased icon size */
+  margin-right: 10px; /* Space between icon and text */
+  border-radius: 50%; /* Make icon rounded */
+  padding: 10px; /* Space around the icon */
+  color: white; /* Icon color can be changed based on preference */
+}
+
+.card:hover {
+  background-color: var(--hover-color);
+}
+
+.card:hover .icon {
+  color: white; /* Change color to white on hover */
+}
+
+/* Dark Theme Styles */
+body.dark .card {
+  background-color: #444; /* Dark background */
+  color: white; /* Light text color */
+  border-bottom: 4px solid transparent; /* transparent bottom border for consistency */
+}
+
+body.dark .card:hover {
+  background-color: var(--hover-color); /* hover effect */
+  border-bottom: 4px solid transparent; /* bottom border */
+}

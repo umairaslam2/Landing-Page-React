@@ -1,0 +1,75 @@
+/* src/components/Sidebar.css */
+.sidebar {
+  width: 250px;
+  transition: width 0.3s ease;
+  background-color: white; /* Default background color */
+}
+
+.sidebar.collapsed {
+  width: 80px; /* Collapsed width */
+}
+
+.sidebar.dark {
+  background-color: #333; /* Dark mode background color */
+  color: white; /* Text color in dark mode */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li .svg-inline--fa {
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 1.2em; /* icon size  */
+  min-width: 24px; /*  icons have a fixed width  */
+}
+
+.sidebar.dark li {
+  color: #fff; /* Text color in dark mode */
+}
+
+.sidebar.collapsed li {
+  justify-content: center; /* Center the icons when collapsed */
+}
+
+.sidebar .chevron {
+  margin-left: auto;
+}
+
+.sidebar .dropdown {
+  padding-left: 20px;
+}
+
+.sidebar .collapse-toggle {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.sidebar.collapsed .dropdown-toggle {
+  justify-content: center; /* Center the icons when collapsed */
+}
+
+.sidebar.collapsed .dropdown {
+  display: none; /* Hide dropdown when collapsed */
+}
+
+/* Dropdown menu styles in dark mode */
+.sidebar.dark .dropdown {
+  background-color: #444; /* Dropdown background color in dark mode */
+}
+
+.sidebar.dark .dropdown li {
+  color: #fff; /* Text color in dropdown for dark mode */
+}
+
+.sidebar.dark .dropdown li:hover {
+  background-color: #555; /* Hover effect for dropdown items */
+}

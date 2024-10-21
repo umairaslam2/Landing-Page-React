@@ -1,0 +1,142 @@
+.header {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  height: 70px;
+}
+
+.header.dark {
+  background-color: #333; /* Dark background for header */
+  border-bottom: 1px solid #444;
+}
+
+.left-section {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 5px; /* Space between logo and "Gaymove" */
+}
+
+.sidebar-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Size for the toggle icon */
+  color: inherit; /* Inherit color for dark mode compatibility */
+  margin-left: 40px; /*  margin to remove any gap */
+}
+
+.logo {
+  height: 40px;
+  width: 40px; /*  size on logo */
+}
+
+.brand-name {
+  color: blue;
+  font-size: 24px;
+  margin: 0; /* Remove default margin */
+}
+
+.brand-name.dark {
+  color: white; /* White text in dark mode */
+}
+
+.center-section {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  flex-grow: 1; /* Allow this section to grow and take available space */
+  justify-content: space-between; /* Distribute space between title and search bar */
+}
+
+.header-title {
+  font-size: 27px;
+  color: #333; /* Text color */
+  margin-right: 40px; /* Reduced margin to minimize gap */
+}
+
+.header-title.dark {
+  color: white; /* White text for heading in dark mode */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 350px; /* Adjust the width as needed */
+  color: gray;
+  height: 40px;
+  margin-right: 50px; /* Space between search bar and icons */
+}
+
+.search-bar input {
+  width: 100%; /* Input takes full width of the search bar */
+  height: 100%; /* Full height */
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Rounded corners */
+  padding: 5px 10px; /* Padding inside input */
+  font-size: 16px; /* Font size */
+  background-color: #fff; /* Light background for light theme */
+  color: #333; /* Text color */
+}
+
+.search-bar input.dark {
+  background-color: #444; /* Dark background for input */
+  border: 1px solid #555;
+  color: white; /* White text in dark mode */
+}
+
+.search-icon {
+  position: absolute; /* Positioning the search icon inside the input */
+  right: 10px; /* Adjust right position */
+  color: #888; /* Icon color */
+  pointer-events: none; /* Prevent click events on the icon */
+}
+
+.search-icon.dark {
+  color: #bbb; /* Lighter icon color for dark mode */
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.icon1 {
+  cursor: pointer;
+  color: #333; /* Default icon color */
+  font-size: 20px; /* Increased icon size */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.icon1:hover {
+  color: blue; /* Change color on hover */
+}
+
+.icon1.dark {
+  color: white; /* White icon color in dark mode */
+}
+
+.icon1.dark:hover {
+  color: lightblue; /* Lighter color on hover in dark mode */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333; /* Text color */
+}
+
+.profile.dark {
+  color: white; /* White text in dark mode */
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Fully rounded */
+  object-fit: cover; /*  image fits the container */
+}
